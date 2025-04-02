@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Resume Creation</title>
+</head>
+<body style="font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f0f0f0;">
+
+    <!-- Header Section -->
+    <header style="background-color: #3b5998; color: #fff; text-align: center; padding: 3rem 0; position: relative;">
+        <img src="yashi.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; position: absolute; top: 60px; left: 50%; transform: translateX(-50%);">
+        <h1 style="font-size: 2.5rem; margin-top: 180px;">Yashica</h1>
+        <p style="font-size: 1.2rem; margin: 10px 0;">II Bsc IT</p>
+        <p style="font-size: 1rem; margin: 5px 0;">School of Computer Science</p>
+        <p style="font-size: 1rem; margin: 5px 0;">VET Institute of Arts and Science College, Thindal, Erode</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav style="background-color: #34a853; color: #fff; text-align: center; padding: 1rem;">
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="display: inline; margin: 0 20px;"><a href="#Summery Statement" style="color: #fff; text-decoration: none;">Summary</a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="#Objective" style="color: #fff; text-decoration: none;">Career Objective</a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="#skills" style="color: #fff; text-decoration: none;">Skills</a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="#projects" style="color: #fff; text-decoration: none;">Projects</a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="#resume" style="color: #fff; text-decoration: none;">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Summary Section -->
+    <section id="Summery Statement" style="background-color: #ffffff; padding: 2rem; margin: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Summary Statement</h2>
+        <p style="font-size: 1.2rem;">A motivated second-year Information Technology student with a strong foundation in HTML, CSS, JavaScript, and web development. Passionate about creating responsive websites, UI/UX design, and emerging web technologies, eager to gain hands-on experience.</p>
+    </section>
+
+    <!-- Career Objective Section -->
+    <section id="Objective" style="background-color: #ffffff; padding: 2rem; margin: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Career Objective</h2>
+        <p style="font-size: 1.2rem;">To secure a challenging role in the field of Information Technology, where I can apply my skills in web development, programming, and problem-solving to contribute to innovative projects. Eager to gain hands-on experience and enhance my technical expertise while continuously learning about emerging technologies.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #ffffff; padding: 2rem; margin: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Skills</h2>
+        <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.2rem;">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background-color: #ffffff; padding: 2rem; margin: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Projects</h2>
+        <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.2rem;">
+            <li>Artificial Neural Network Based Extreme Learning Machine Technique in Credit Risk Management</li>
+            <li>Hardware</li>
+            <li>Software</li>
+            <li>Chatbot</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" style="background-color: #ffffff; padding: 2rem; margin: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <center>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Resume</h2>
+            <a href="yashiR.docx" target="_blank" style="background-color: #333; color: #fff; padding: 0.5rem 1rem; text-decoration: none; border-radius: 20px; display: inline-block; font-size: 1.2rem;">Download CV</a>
+        </center>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; padding: 1rem 0; background-color: #333; color: #fff;">
+        <p>&copy; Yashica</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
